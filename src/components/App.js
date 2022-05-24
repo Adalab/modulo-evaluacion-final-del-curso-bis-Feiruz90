@@ -1,11 +1,14 @@
-import "../styles/App.scss";
+import { useState, useEffect } from "react";
+import recipesApi from "../services/recipesApi";
 
 function App() {
-  return (
-    <div>
-      <h1>hola mundo</h1>
-    </div>
-  );
+  const [dataRecipes, setDataRecipes] = useState([]);
+
+  useEffect(() => {
+    recipesApi().then((recipes) => {});
+  }, []);
+  console.log(recipesApi());
+  return <h1></h1>;
 }
 
 export default App;
