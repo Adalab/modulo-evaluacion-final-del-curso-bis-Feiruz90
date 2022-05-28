@@ -1,7 +1,8 @@
-/*@import 'components';
-
-body{
-
+@import './components/DetailRecipe.scss';
+@import './components/ListRecipe.scss';
+@import './Reset.scss';
+body {
+  width: 100%;
   background-color: pink;
+  text-decoration: none;
 }
-*/
